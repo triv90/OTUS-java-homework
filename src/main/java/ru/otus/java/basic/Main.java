@@ -3,40 +3,41 @@ package ru.otus.java.basic;
 public class Main {
     public static void main(String[] args) {
 
-        int count = 3;
+        int ran = (int) (Math.random() * 10)+1;
         String string = "String";
-        int[] arr = new int[6];
+        int[] arr = new int[ran];
         fillRandomArr(arr);
+        System.out.println("\nran = " + ran);
 
-        System.out.println("\n\n1");
-        printString(count, string);
+        System.out.println("\n1");
+        printString(ran, string);
         System.out.println("\n2");
         sumArrMoreFive(arr);
         System.out.println("\n3");
-        fillArr(1, arr);
+        fillArr(ran, arr);
         System.out.println("\n4");
         fillRandomArr(arr);
         System.out.println("");
-        addArr(2, arr);
+        addArr(ran, arr);
         System.out.println("\n5");
         int dataLeft = 0;
         int dataRight = 0;
         System.out.print("arr = ");
-        for (int i = 0; i < (arr.length/2); i++) {
+        for (int i = 0; i < (arr.length / 2); i++) {
             dataLeft += arr[i];
             System.out.print(arr[i] + " ");
         }
         System.out.print("| ");
-        for (int i = arr.length/2; i < arr.length; i++) {
+        for (int i = arr.length / 2; i < arr.length; i++) {
             dataRight += arr[i];
             System.out.print(arr[i] + " ");
         }
         System.out.println("\n");
-        if(dataRight<dataLeft){
+        if (dataRight < dataLeft) {
             System.out.println("Левая часть больше");
-        } else if (dataRight>dataLeft) {
+        } else if (dataRight > dataLeft) {
             System.out.println("Правая часть больше");
-        }else {
+        } else {
             System.out.println("Части равны");
         }
     }
@@ -54,6 +55,7 @@ public class Main {
             arr[i] += x;
             System.out.print(arr[i] + " ");
         }
+        System.out.println("");
     }
 
     private static void fillArr(int x, int[] arr) {
