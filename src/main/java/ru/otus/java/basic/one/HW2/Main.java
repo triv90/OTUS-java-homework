@@ -1,11 +1,9 @@
-package ru.otus.java.basic;
-
-import java.util.Scanner;
+package ru.otus.java.basic.one.HW2;
 
 public class Main {
     public static void main(String[] args) {
 
-        int ran = (int) (Math.random() * 10)+1;
+        int ran = (int) (Math.random() * 10) + 1;
         String string = "String";
         int[] arr = new int[ran];
         fillRandomArr(arr);
