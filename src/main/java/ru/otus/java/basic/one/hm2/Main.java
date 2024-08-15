@@ -1,4 +1,4 @@
-package ru.otus.java.basic.one.HW2;
+package ru.otus.java.basic.one.hm2;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ru.otus.java.basic.two.HW4;
+package ru.otus.java.basic.two.hm4;
 
 import java.time.Year;
 

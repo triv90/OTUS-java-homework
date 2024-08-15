@@ -1,4 +1,4 @@
-package ru.otus.java.basic.two.HW4;
+package ru.otus.java.basic.two.hm4;
 
 public class Box {
 
@@ -7,9 +7,9 @@ public class Box {
     private final int height;
     private String color;
     private Boolean openStatus;
-    private Boolean emptyStatus;
+    private String emptyStatus;
 
-    public Box(int length, int width, int height, String color, Boolean openStatus, Boolean emptyStatus) {
+    public Box(int length, int width, int height, String color, Boolean openStatus, String emptyStatus) {
         this.length = length;
         this.width = width;
         this.height = height;
@@ -42,16 +42,8 @@ public class Box {
         return openStatus;
     }
 
-    public void setOpenStatus(Boolean openStatus) {
-        this.openStatus = openStatus;
-    }
-
-    public Boolean getEmptyStatus() {
+    public String getEmptyStatus() {
         return emptyStatus;
-    }
-
-    public void setEmptyStatus(Boolean emptyStatus) {
-        this.emptyStatus = emptyStatus;
     }
 
     public void boxInfo() {
@@ -62,10 +54,10 @@ public class Box {
         } else {
             System.out.println("Коробка закрыта");
         }
-        if (emptyStatus) {
+        if (emptyStatus.equals("")) {
             System.out.println("Коробка пустая");
         } else {
-            System.out.println("Коробка заполнена");
+            System.out.println("Коробка заполнена: " + emptyStatus);
         }
     }
 
@@ -89,19 +81,19 @@ public class Box {
     }
 
     // Складываем и выкидываем предмет в/из открытой коробки
-    public void putThing() {   // Кладем предмет в пустую коробку
-        if (emptyStatus) {
-            emptyStatus = false;
-            System.out.println("Положили предмет в пустую коробку");
+    public void putThing(String subject) {   // Кладем предмет в пустую коробку
+        if (emptyStatus.equals("")) {
+            emptyStatus = subject;
+            System.out.println("Положили предмет " + subject + " в пустую коробку");
         } else {
             System.out.println("В коробке уже лежит предмет");
         }
     }
 
     public void getThing() { // Берем предмет из заполненной коробки
-        if (!emptyStatus) {
-            emptyStatus = true;
-            System.out.println("Забрали предмет из коробку");
+        if (!emptyStatus.equals("")) {
+            System.out.println("Забрали предмет" + emptyStatus + " из коробку");
+            emptyStatus = "";
         } else {
             System.out.println("Коробка уже пустая");
         }
