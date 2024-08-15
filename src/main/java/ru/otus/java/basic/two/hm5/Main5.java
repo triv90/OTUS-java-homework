@@ -1,4 +1,4 @@
-package ru.otus.java.basic.two.HW5;
+package ru.otus.java.basic.two.hm5;
 
 public class Main5 {
     public static void main(String[] args) {
