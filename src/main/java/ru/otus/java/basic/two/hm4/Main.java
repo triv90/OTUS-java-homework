@@ -24,5 +24,8 @@ public class Main {
                         + users[i].getMiddleName() + ", " + users[i].getYearOfBirthday() + ", " + users[i].getEmail());
             }
         }
+        Box box = new Box(3, 3, 3, "red", true, "");
+        box.boxInfo();
+        box.putThing("круг");
     }
 }

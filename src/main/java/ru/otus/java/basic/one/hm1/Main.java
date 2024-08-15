@@ -35,15 +35,12 @@ public class Main {
             } else {
                 addOrSubtractAndPrint(a, b, false);
             }
-            @sproshchaev sproshchaev on Jun 5
-            Весь if -else:
 
             if (Math.random() > 0.5) {
                 addOrSubtractAndPrint(a, b, true);
             } else {
                 addOrSubtractAndPrint(a, b, false);
             }
-            можно заменить на одну строку:
 
             addOrSubtractAndPrint(a, b, Math.random() > 0.5);
         }

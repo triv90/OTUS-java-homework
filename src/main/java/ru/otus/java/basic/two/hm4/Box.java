@@ -62,7 +62,7 @@ public class Box {
     }
 
     // Открываем и закрываем коробку
-    public void openBox() {  // Открываем закрытую коробку
+    public void open() {  // Открываем закрытую коробку
         if (!openStatus) {
             openStatus = true;
             System.out.println("Открыли коробку");
@@ -71,7 +71,7 @@ public class Box {
         }
     }
 
-    public void closeBox() { // Закрываем открытую коробку
+    public void close() { // Закрываем открытую коробку
         if (openStatus) {
             openStatus = false;
             System.out.println("Закрыли коробку");
