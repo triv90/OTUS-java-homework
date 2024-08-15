@@ -1,4 +1,4 @@
-package ru.otus.java.basic.two.HW7;
+package ru.otus.java.basic.two.hm7;
 
 public class Man {
 
