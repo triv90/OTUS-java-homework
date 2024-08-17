@@ -24,11 +24,11 @@ public class Main11 {
             tree.insert(value);
         }
 
-        Employee employee = new Employee("Сотрудник 5", 42);
+        Employee employee = new Employee("Сотрудник 3", 49);
         System.out.println("Поиск сотрудника: " + employee);
         System.out.println("Результат: " + tree.find(employee));
 
-        employee = new Employee("Сотрудник 10", 77);
+        employee = new Employee("Сотрудник 9", 77);
         System.out.println("Поиск сотрудника: " + employee);
         System.out.println("Результат: " + tree.find(employee));
 
