@@ -1,9 +1,7 @@
 package ru.otus.java.basic.three.hw12;
 
-import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -13,7 +11,6 @@ public class Main12 {
         for (File fileEntry : tempDir.listFiles()) {
             if (fileEntry.getName().lastIndexOf("txt") > 0) {
                 System.out.println(fileEntry.getName());
-            } else {
             }
         }
         System.out.println();
