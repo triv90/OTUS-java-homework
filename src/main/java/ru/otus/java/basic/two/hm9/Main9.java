@@ -27,10 +27,10 @@ public class Main9 {
         System.out.println();
 
         System.out.println("Пункт № 5. Операции с классом Employee");
-        Employee.nameEmployee(new ArrayList<>(Arrays.asList(new Employee("Иванов", 35), new Employee("Петров", 83), new Employee("Сидоров", 25), new Employee("Рыжов", 70))));
-        Employee.moreAgeEmployee(new ArrayList<>(Arrays.asList(new Employee("Иванов", 35), new Employee("Петров", 83), new Employee("Сидоров", 25), new Employee("Рыжов", 70))), 50);
-        Employee.averageAgeEmployee(new ArrayList<>(Arrays.asList(new Employee("Иванов", 35), new Employee("Петров", 83), new Employee("Сидоров", 25), new Employee("Рыжов", 70))), 53);
-        Employee.yangestEmployee(new ArrayList<>(Arrays.asList(new Employee("Иванов", 35), new Employee("Петров", 83), new Employee("Сидоров", 25), new Employee("Рыжов", 70))));
+        System.out.println(Employee.nameEmployee(new ArrayList<>(Arrays.asList(new Employee("Иванов", 35), new Employee("Петров", 83), new Employee("Сидоров", 25), new Employee("Рыжов", 70)))));
+        System.out.println(Employee.moreAgeEmployee(new ArrayList<>(Arrays.asList(new Employee("Иванов", 35), new Employee("Петров", 83), new Employee("Сидоров", 25), new Employee("Рыжов", 70))), 50));
+        System.out.println(Employee.averageAgeEmployee(new ArrayList<>(Arrays.asList(new Employee("Иванов", 35), new Employee("Петров", 83), new Employee("Сидоров", 25), new Employee("Рыжов", 70))), 53));
+        System.out.println(Employee.yangestEmployee(new ArrayList<>(Arrays.asList(new Employee("Иванов", 35), new Employee("Петров", 83), new Employee("Сидоров", 25), new Employee("Рыжов", 70)))).getName());
         System.out.println("Пункт № 5 выполнен");
         System.out.println();
     }
