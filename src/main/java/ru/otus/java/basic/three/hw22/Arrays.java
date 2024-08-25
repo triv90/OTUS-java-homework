@@ -1,15 +1,13 @@
 package ru.otus.java.basic.three.hw22;
 
-import java.util.Arrays;
-
-public class Array {
+public class Arrays {
     public int[] itemsAfterOne(int[] array) {
         if (array == null) {
             throw new RuntimeException();
         }
         for (int i = array.length - 1; i >= 0; i--) {
             if (array[i] == 1) {
-                return Arrays.copyOfRange(array, i + 1, array.length);
+                return java.util.Arrays.copyOfRange(array, i + 1, array.length);
             }
         }
         throw new RuntimeException();

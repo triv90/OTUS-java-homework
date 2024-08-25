@@ -9,12 +9,12 @@ import org.junit.jupiter.params.provider.NullSource;
 
 import java.util.stream.Stream;
 
-public class ArrayTest {
-    Array ah;
+public class ArraysTest {
+    Arrays ah;
 
     @BeforeEach
     void before() {
-        ah = new Array();
+        ah = new Arrays();
     }
 
     public static Stream<Arguments> itemsAfterOne() {
